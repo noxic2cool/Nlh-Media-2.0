@@ -1,0 +1,445 @@
+/* nav styling begin */
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  header{
+    background-color: #ffffff;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  a{
+    color: grey;
+    text-decoration: none;
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+  }
+  
+  .container{
+    max-width: 1224px;
+    width: 92%;
+    margin: 0 auto;
+  }
+  
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-branding{
+    font-size: 2rem;
+  }
+  
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .nav-link{
+    transition: 0.3s ease-out;
+  }
+  
+  .nav-link:hover{
+    color: dodgerblue;
+  }
+  
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: black;
+  }
+
+  .orange {
+    display: block;
+  }
+  
+  @media(max-width:1024px){
+    .hamburger{
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #ffffff;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-item{
+      margin: 16px 0;
+    }
+  
+    .nav-menu.active{
+      left: 0;
+    }
+
+
+  }
+
+/* nav styling end */
+
+
+/* excess nav styling begin */
+
+.nlhphoto {
+  height: 30px;
+  width: auto;
+}
+
+.nlhlogo {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.active {
+  color: #006BB6; 
+}
+
+.active:hover {
+  cursor: default; 
+}
+
+.inactive:hover {
+  transition: 0.5s;
+  color: orange;
+}
+
+/* excess nav styling end */
+
+
+/* body styles begin */
+
+body {
+  background-image: url("Photos/eo.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+/* body styles end */
+
+
+/* main styles begin */
+
+main {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+/* main styles end */
+
+
+/* blue div styles begin */
+
+.blue{
+  height: 390px;
+  width: 100%;
+  background-color: #006BB6;
+  display: inline-block;
+}
+
+.blue h1 {
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-top: 8px;
+}
+
+.blue p {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-top: 3px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+}
+
+/* blue div styles end */
+
+
+/* orange div styles begin */
+
+.orange {
+  display: block;
+  height: 455px;
+  width: 100%;
+  background-color: #F58426;
+}
+
+
+.orange h1 {
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: 0px;
+}
+
+.orange h2 {
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  color: white;
+  padding-top: 9px;
+  padding-bottom: 5px;
+}
+
+.orange p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.title1o {
+  margin-bottom: -20px;
+}
+
+.minititleo2 {
+  margin-top: -2px;
+}
+
+.audio {
+  padding-top: 7px;
+  padding-left: 80px;
+}
+
+audio {
+  padding-top: 12px;
+  padding-left: 135px;
+}
+
+/* orange div styles end */
+
+
+/* iframe styles begin */
+
+iframe {
+  width: 370px; 
+  height: 190px;
+  margin-left: 110px;
+}
+
+/* iframe styles end */
+
+
+/* footer styles begin */
+
+footer {
+  width: 100%;
+  background: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 7px;
+}
+
+footer p {
+  font-size: 10px;
+  display: inline-block;
+  padding: 0 50px;
+  margin: 10 20px;
+  color: black;
+  font-family: "Francois One", sans-serif;
+  font-style: bold;
+  
+}
+
+/* footer styles end */
+
+
+@media(min-width:1024px){
+
+/* computer screen main div styles begin */
+
+main {
+  margin-top: 60px;
+}
+
+/* computer screen main div styles end */
+
+
+/* computer screen blue styles begin */
+
+.blue {
+  height: 470px;
+  width: 65%;
+  background-color: #006BB6;
+  display: inline-block;
+  position: fixed;
+}
+
+.blue h1 {
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: 8px;
+}
+
+.blue p {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-top: 22px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 19px;
+}
+
+.blue .p2 {
+  margin-top: 5px;
+}
+
+/* computer screen blue div styles end */
+
+
+/* computer screenv orange div styles begin */
+
+.orange {
+  height: 470px;
+  width: 35%;
+  background-color: #F58426;
+  float: right;
+}
+
+.orange h1 {
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: 8px;
+}
+
+.orange h2 {
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  color: white;
+  padding-top: 9px;
+  padding-bottom: 5px;;
+}
+
+.orange p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.title1o {
+  margin-bottom: -20px;
+}
+
+.minititleo2 {
+  margin-top: -2px;
+}
+
+.audio {
+  padding-top: 20px;
+  padding-left: 1px;
+}
+
+audio {
+  padding-top: 12px;
+}
+
+/* computer screen orange div styles end*/
+
+
+/* computer screen iframe styles begin */
+
+  iframe {
+  width: 370px; 
+  height: 190px;
+  margin-left: 70px;
+  }
+
+/* computer screen iframe styles end */
+  
+  
+  
+/* computer screen audio styles begin */
+  
+  audio {
+  padding-left: 100px;
+  }
+  
+  .audio {
+  text-align: center;
+  margin-top: -15px;
+  }
+
+/* computer screen audio styles end */
+
+
+/* computer screen button styles begin */
+
+.button {
+  margin-left: 400px;
+  margin-top: 90px;
+}
+
+/* computer screen button styles end */
+
+
+/* computer screen footer styles begin */
+
+footer {
+  width: 100%;
+  background: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 7px;
+}
+
+footer p {
+  font-size: 10px;
+  display: inline-block;
+  padding: 0 300px;
+  margin: 10 20px;
+  color: black;
+  font-family: "Francois One", sans-serif;
+  font-style: bold;
+  
+}
+
+/* computer screen footer styles end */
+
+}

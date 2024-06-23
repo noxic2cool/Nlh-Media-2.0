@@ -1,0 +1,519 @@
+/* nav styling begin */
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  header{
+    background-color: #ffffff;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  a{
+    color: grey;
+    text-decoration: none;
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+  }
+
+  main {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  
+  .container{
+    max-width: 1224px;
+    width: 92%;
+    margin: 0 auto;
+  }
+  
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-branding{
+    font-size: 2rem;
+  }
+  
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .nav-link{
+    transition: 0.3s ease-out;
+  }
+  
+  .nav-link:hover{
+    color: dodgerblue;
+  }
+  
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: black;
+  }
+  
+  @media(max-width:1024px){
+    .hamburger{
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #ffffff;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-item{
+      margin: 16px 0;
+    }
+  
+    .nav-menu.active{
+      left: 0;
+    }
+
+  }
+
+/* nav styling end */
+
+
+/* excess nav styling begin */
+.nlhphoto {
+  height: 30px;
+  width: auto;
+}
+
+.nlhlogo {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.active {
+  color: #006BB6; 
+}
+
+.active:hover {
+  cursor: default; 
+}
+
+.inactive:hover {
+  transition: 0.5s;
+  color: orange;
+}
+
+/* excess nav styling end */
+
+
+/* body styles begin */
+
+body {
+  background-image: url("Photos/eo.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+/* body styles end */
+
+
+/* button styles begin */
+
+.btn {
+  background-color: white;
+  color: #006BB6;
+  font-family: "Francois One", sans-serif;
+  border-radius: 20px;
+  height: 52px;
+  width: 250px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: orange;
+  color: white;
+  transition: 0.5s;
+}
+
+.button {
+  margin-left: 170px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* button styles end */
+
+
+/* blue div styles begin*/
+
+.blue{
+  height: 440px;
+  width: 100%;
+  background-color: #006BB6;
+  display: inline-block;
+}
+
+.blue h2 {
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+.blue p {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-top: 3px;
+}
+
+
+.blue h3 {
+  color: white;
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+  margin-top: -5px;
+}
+
+.blue ul li {
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.blue ul {
+  text-align: center;
+}
+
+.blue .nt {
+  margin-top: 8px;
+  margin-left: -10px;
+}
+
+/* blue div styles end */
+
+
+/* mid_blue div styles begin */
+
+.mid_blue {
+  padding-top: 6px;
+}
+
+/* mid_blue div styles end */
+
+
+/* low_blue div styles begin */
+
+.low_blue {
+  margin-top: 17px;
+}
+
+.low_blue h3 {
+  color: white;
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+  padding-left: 25px;
+  padding-top: 5px;
+}
+
+/* low_blue div styles end */
+
+
+/* orange div styles begin */
+
+.orange {
+  display: block;
+  height: 575px;
+  width: 100%;
+  background-color: #F58426;
+}
+
+.orange ul li {
+  text-align: left;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+.orange h2 {
+  color: white;
+  font-family: "Francois One", sans-serif;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+
+.orange p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.orange .op {
+  padding-left: 8px;
+}
+
+.orange .mh {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+
+.orange .lists {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+
+/* orange div styles begin */
+
+
+/* footer styles begin */
+
+footer {
+  width: 100%;
+  background: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 7px;
+}
+
+footer p {
+  font-size: 10px;
+  display: inline-block;
+  padding: 0 50px;
+  margin: 10 20px;
+  color: black;
+  font-family: "Francois One", sans-serif;
+  font-style: bold;
+  
+}
+
+/* footer styles end */
+
+
+
+@media(min-width:1024px){
+
+  /* computer screen main div styles begin */
+
+  main {
+    margin-top: 60px;
+  }
+
+  /* computer screen main div styles end */
+
+ .cap {
+  margin-top: 5px;
+  font-weight: bold;
+ }
+
+
+  .text {
+    font-family: "Francois One", sans-serif;
+    color: white;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 22px;
+    font-family: "Francois One", sans-serif;
+    color: white;
+    margin-left: -32px;
+    padding-top: 5px;
+  }
+
+
+
+/* computer screen blue styles begin */
+
+.blue {
+  height: 520px;
+  width: 25%;
+  background-color: #006BB6;
+  display: inline-block;
+  position: fixed;
+}
+
+.blue ul li {
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.blue ul {
+  text-align: center;
+}
+
+.blue .nt {
+  margin-top: 8px;
+  margin-left: -10px;
+}
+
+/* computer screen blue styles end */
+
+
+/* computer screen mid blue styles begin */
+
+.mid_blue {
+  padding-top: 16px;
+}
+
+/* computer screen mid blue styles begin */
+
+
+/* computer screen low blue styles begin */
+
+.low_blue {
+  margin-top: 17px;
+}
+
+.low_blue h3 {
+  color: white;
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+/* computer screen low blue styles end */
+
+
+/* computer screen button styles begin*/
+
+.btn {
+  background-color: white;
+  color: #006BB6;
+  border-radius: 20px;
+  height: 42px;
+  width: 150px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: orange;
+  color: white;
+  transition: 0.5s;
+}
+
+.button {
+  margin-left: 110.8px;
+  margin-top: 9px;
+}
+
+/* computer screen button styles end */
+
+
+/* computer screen orange div styles begin */
+
+.orange {
+  height: 520px;
+  width: 75%;
+  background-color: #F58426;
+  float: right;
+}
+
+.orange h2 {
+  color: white;
+  font-family: "Francois One", sans-serif;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+
+.orange p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.orange .op {
+  padding-left: 8px;
+}
+
+.orange .mh {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+
+.orange .lists {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+
+/* computer screen orange div styles end */
+
+
+/* computer screen footer styles begin */
+
+footer {
+  width: 100%;
+  background: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 7px;
+}
+
+footer p {
+  font-size: 10px;
+  display: inline-block;
+  padding: 0 300px;
+  margin: 10 20px;
+  color: black;
+  font-family: "Francois One", sans-serif;
+  font-style: bold;
+  
+}
+
+/* computer screen footer styles end */
+
+}
